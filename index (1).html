@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vaultify Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Vaultify Store</h1>
+  <h2 class="subtitle">Secure Your Creativity</h2>
+
+  <div class="filter-buttons" aria-label="Product category filters" role="group">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="digital-bundle">Digital Bundle</button>
+    <button class="filter-btn" data-category="premium-softwares">Premium Softwares</button>
+    <button class="filter-btn" data-category="reels-bundle">Reels Bundle</button>
+    <button class="filter-btn" data-category="courses-bundle">Courses Bundle</button>
+    <button class="filter-btn" data-category="youtube-smm">YouTube SMM</button>
+    <button class="filter-btn" data-category="instagram-smm">Instagram SMM</button>
+  </div>
+
+  <main class="grid-products" id="productGrid" aria-live="polite" aria-atomic="true" role="list"></main>
+
+  <section class="contact-section" aria-label="Contact Us">
+    <h3>Contact Us</h3>
+    <form id="contactForm" autocomplete="off" novalidate>
+      <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required />
+      <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required />
+      <textarea id="message" name="message" class="form-textarea" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-send">Send Message</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
